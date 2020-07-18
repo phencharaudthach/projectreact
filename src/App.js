@@ -1,24 +1,20 @@
+// App.js is a component which is one file that holds all the js logic, html, styling.
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Tweet from './Tweet';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // jsx
+    <div className='app'>
+      <Tweet
+        name='Dev Ed'
+        message='Check out my courses and become more creative'
+        likes='5'
+      />
+      <Tweet name='Mosh' message='My new course is available' likes='10000' />
+      <Tweet name='Phen' message='This is a random tweet' likes='2000' />
+      <Tweet name='Traversy' message='700k my dudes' likes='10000000' />
     </div>
   );
 }
